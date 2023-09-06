@@ -1,1 +1,1 @@
-file:///Users/rachelsyoo/Desktop/webdev/ITP104/itp104-submissions-rachelsyoo/index.html
+https://uscwebdev.github.io/itp104-submissions-rachelsyoo/index.html
