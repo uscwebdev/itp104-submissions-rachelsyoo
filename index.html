@@ -4,23 +4,20 @@
 <style>
 
     h1 {
-        text-align: center;
         font-family: Arial, Helvetica, sans-serif;
     }
 
-    h2 {
-        text-align: center;
+    h2{
+        line-height: 1%;
     }
 
     h3 {
             background-color: steelblue;
             color: white;
-            text-align: center;
             font-family: Arial, Helvetica, sans-serif;
         }
 
     p {
-        text-align: center;
         font-family: Arial, Helvetica, sans-serif;
     }
 
@@ -29,41 +26,84 @@
         height: auto;
     }
     
-    ol{
-        text-indent: 1em;
-        margin-left: 35em;
+    
+
+    #everything {
+        width: 950px;
+        justify-content: center;
+        line
+
     }
 
-    ul{
-        text-indent: 1em;
-        margin-left: 35em;
+    .row {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        width: 100%;
     }
+
+    .column {
+        float: left;
+        display: flex;
+        flex-direction: column;
+        width: 400px;
+        justify-content: left;
+    }
+
 
 </style>
 
+<div id="everything">
+
+<head>
 <h1> Rachel Yoo </h1>
 <p> <a href="mailto"> rsyoo@usc.edu </a> </p>
-<h3> <em> my favorite color is blue </em> </h3>
-<p> my favorite website <a target="_blank" href="https://www.youtube.com/watch?v=dQw4w9WgXcQ&ab_channel=RickAstley"> (click to see what it is) </a> </p>
-<p> <img src="https://hotdogonaleash.com/wp-content/uploads/2022/08/Why-Do-Dogs-Like-to-Cuddle-2.jpg" alt="cuddling with dog"></p>
-<p> <h2> Classes I am Enrolled in: </h2> </p>
-    <ul>
-        <li>Introduction to Web Development</li>
-        <li>History of Computing</li>
-        <li>Advanced Writing</li>
-        <li>Ceramics</li>
-        <li>Cognitive Processes</li>
-    </ul>
-<p> <h2> Completed Assignments</h2></p>
-<ol>
-    <li> <a href="assignment_01/assignment_01.html">Assignment 1 </a> </li>
-    <li> <a href="assignment_02/assignment_02.html"> Assignment 2</a></li>
-</ol>
-<p> <h2>Completed Labs</h2> </p>
-<ol> 
-    <li> <a href="index.html"> Lab 1 </a> </li>
-    <li> Lab 2 </li>
-    <li> <a href="lab_03/lab_03.html"> Lab 3 </li>
-</ol>
+<hr>
+</head>
 
+<div class="row">
+    <div class="column">
+    <h3> <em> my favorite color is blue </em> </h3>
+    <p> my favorite website <a target="_blank" href="https://www.youtube.com/watch?v=dQw4w9WgXcQ&ab_channel=RickAstley"> (click to see what it is) </a> </p>
+    <p> my favorite activity: </p>
+    <p> <img src="https://hotdogonaleash.com/wp-content/uploads/2022/08/Why-Do-Dogs-Like-to-Cuddle-2.jpg" alt="cuddling with dog"></p>
+    </div>
+
+    <div class="column"
+    <h3> <em> my schedule this semester </em> </h3>
+        <ul>
+            <li>Introduction to Web Development</li>
+            <li>History of Computing</li>
+            <li>Advanced Writing</li>
+            <li>Ceramics</li>
+            <li>Cognitive Processes</li>
+        </ul>
+    </div>
+</div>
+<hr>
+
+<div class="row">
+    <div class="assignments">
+        <div class="column">
+    <p> <h2> Completed Assignments</h2></p>
+    <ol>
+        <li> <a href="assignment_01/assignment_01.html">Assignment 1: Web Resume </a> </li>
+        <li> <a href="assignment_02/assignment_02.html"> Assignment 2: TV Show/ Movie Article </a></li>
+    </ol>
+        </div>
+
+        <div class="column">
+    <p> <h2>Completed Labs</h2> </p>
+    <ol> 
+        <li> <a href="index.html"> Lab 1 </a> </li>
+        <li> Lab 2 </li>
+        <li> <a href="lab_03/lab_03.html"> Lab 3 </li>
+    </ol>
+        </div>
+ </div>
+</div>   
+
+</div>
+</div>
+</div>
 
