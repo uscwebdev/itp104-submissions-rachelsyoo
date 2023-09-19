@@ -9,7 +9,7 @@
         #everything{
             background-color: cornflowerblue;
             position: center;
-            height: 2500px;
+            height: 3000px;
         }
 
         #content{
@@ -19,12 +19,21 @@
             margin-left: auto;
             margin-right: auto;
             margin-top: none;
-            height: 1800px;
+            height: 2100px;
             
 
             background-color:lightskyblue;
         }
 
+        .row {
+                    display: flex;
+                    flex-direction: right;
+                }
+
+        .column {
+            display: flex;
+            flex-direction: down;
+        }
 
         img{
             width: 400px;
@@ -69,6 +78,8 @@
 
         #main-box{
             padding: 30px;
+            display: flex;
+            flex-direction: column;
         }
 
         #body_01{
@@ -100,6 +111,17 @@
             width: fit-content;
         }
 
+        #sidebar img{
+            width: 200px;
+            justify-content: center;
+        }
+
+        #sidebar {
+            text-align: center;
+            background-color: lightcyan;
+            height: 2100px;
+        }
+
     </style>
 </head>
 
@@ -112,57 +134,86 @@
     </div>
 
 <div id="content"> 
+<div class="row">
 
-<div id="main-box">
-    <div id="body_01">
-            <h2> The Magic of Animation</h2>
-            <p> 
+    <div class="column">
+        
+    <div id="sidebar">
+        <p> 
+            <img src="/Users/rachelsyoo/Desktop/webdev/ITP104/itp104-submissions-rachelsyoo/assignment_03/img/ponyo.webp" alt="illustration of Ponyo">
+            Ponyo 
+            <em> | Ponyo, Fishy by the Sea</em>
+        </p>
 
-                I am a huge fan of Motion Pictures, especially those that recreate the small beauties of life. Studio Ghibli is one of my favorite movie
-                studios as they are really good at reimagining the same magic we all had as children. I love the imagery they use, especially their depictions of magical places
+        <p> 
+            <img src="/Users/rachelsyoo/Desktop/webdev/ITP104/itp104-submissions-rachelsyoo/assignment_03/img/Arrietty.webp" alt="illustration of Arietty">
+            Arietty 
+            <em> | The Secret Life of Arietty </em>
+        </p>
 
-                <img src="https://i0.wp.com/www.tor.com/wp-content/uploads/2017/09/Totoro01.jpg?fit=740%2C+9999&crop=0%2C0%2C100%2C417px&ssl=1" alt="still cut of scene from ''My neighbor Totoro''">
-                
-                
-                or even simple scenes they make magic out of. My favorite movies curated by them are "My Neighbor Totoro" and "Spirited Away." What's funny is that 
-                I used to watch those shows as a kid, but when I rewatch them as an adult I interpret the movies completely differently. However, the magic
-                is still there. I am constantly filled with nostalgia of the emotions I felt when I first watched the movie. 
-            
-            </p>
+        <p> 
+            <img src="/Users/rachelsyoo/Desktop/webdev/ITP104/itp104-submissions-rachelsyoo/assignment_03/img/955829836d898716383d2fe3ad8c15ce.jpg" alt="illustration of Luffy">
+            Luffy 
+            <em> | One Piece </em>
+        </p>
+
 
     </div>
-
-    <div id="body_02">
-            <h2> Travel to Worlds You've Never Been To</h2>
-            <p> 
-                What do I like about animation, you may ask? I like that it creates possibilities that are solely fueled by human imagination. It has elements of fiction, yet is realistic enough for us to be able to imagine ourselves in those worlds or imagine those scenarios created in real life.
-                
-                <img src="https://cdnb.artstation.com/p/assets/images/images/008/109/149/large/henry-james-spiritedaway.jpg?1510553832" alt="still cut of scene from ''Spirited Away''">
-  
-                
-                The characters in 
-                my favorite stories are always normal people - like me - who find themselves in magical situations and are whisked away to fantasy lands. My Neighbor Totoro, for example,
-                follows the story of two sisters who are navigating a new home and neighborhood by themselves. In the midst of their loneliness, they meet a friendly forest 
-                troll named Totoro who takes them on a series of adventures through the forest and the night sky. 
-
-            </p>
     </div>
 
+    <div class="column">
+    <div id="main-box">
+        <div id="body_01">
+                <h2> The Magic of Animation</h2>
+                <p> 
 
-    <div id="body_03">
-            <h2> The Limit is your Imagination! </h2>
-            <p> 
-                <img src="https://static.wikia.nocookie.net/onepiece/images/3/39/Arrival_at_Angel_Island.png/revision/latest?cb=20150708000917" alt="still cut of scene from ''One Piece''">
+                    I am a huge fan of Motion Pictures, especially those that recreate the small beauties of life. Studio Ghibli is one of my favorite movie
+                    studios as they are really good at reimagining the same magic we all had as children. I love the imagery they use, especially their depictions of magical places
 
-                Do you ever wonder how many childrens' lives are changed due to the creativity of animators? Here are the words of famous animator and 
-                movie director Hayao Miyazaki: "Well, yes. I believe that children's souls are the inheritors of historical memory from previous generations. 
-                It's just that as they grow older and experience the everyday world that memory sinks lower and lower. I feel I need to make a film that reaches down to that level. If I could do that I would die happy.""
-            </p>
-            <br>
-            <br>
-            <br>
-    </div>
+                    <img src="https://i0.wp.com/www.tor.com/wp-content/uploads/2017/09/Totoro01.jpg?fit=740%2C+9999&crop=0%2C0%2C100%2C417px&ssl=1" alt="still cut of scene from ''My neighbor Totoro''">
+                    
+                    
+                    or even simple scenes they make magic out of. My favorite movies curated by them are "My Neighbor Totoro" and "Spirited Away." What's funny is that 
+                    I used to watch those shows as a kid, but when I rewatch them as an adult I interpret the movies completely differently. However, the magic
+                    is still there. I am constantly filled with nostalgia of the emotions I felt when I first watched the movie. 
+                
+                </p>
 
+        </div>
+
+        <div id="body_02">
+                <h2> Travel to Worlds You've Never Been To</h2>
+                <p> 
+                    What do I like about animation, you may ask? I like that it creates possibilities that are solely fueled by human imagination. It has elements of fiction, yet is realistic enough for us to be able to imagine ourselves in those worlds or imagine those scenarios created in real life.
+                    
+                    <img src="https://cdnb.artstation.com/p/assets/images/images/008/109/149/large/henry-james-spiritedaway.jpg?1510553832" alt="still cut of scene from ''Spirited Away''">
+    
+                    
+                    The characters in 
+                    my favorite stories are always normal people - like me - who find themselves in magical situations and are whisked away to fantasy lands. My Neighbor Totoro, for example,
+                    follows the story of two sisters who are navigating a new home and neighborhood by themselves. In the midst of their loneliness, they meet a friendly forest 
+                    troll named Totoro who takes them on a series of adventures through the forest and the night sky. 
+
+                </p>
+        </div>
+
+
+        <div id="body_03">
+                <h2> The Limit is your Imagination! </h2>
+                <p> 
+                    <img src="https://static.wikia.nocookie.net/onepiece/images/3/39/Arrival_at_Angel_Island.png/revision/latest?cb=20150708000917" alt="still cut of scene from ''One Piece''">
+
+                    Do you ever wonder how many childrens' lives are changed due to the creativity of animators? Here are the words of famous animator and 
+                    movie director Hayao Miyazaki: "Well, yes. I believe that children's souls are the inheritors of historical memory from previous generations. 
+                    It's just that as they grow older and experience the everyday world that memory sinks lower and lower. I feel I need to make a film that reaches down to that level. If I could do that I would die happy.""
+                </p>
+                <br>
+                <br>
+                <br>
+        </div>
+        </div>
+
+</div>
 </div>
 </div>
 
