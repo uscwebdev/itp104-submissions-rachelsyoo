@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+
+<style>
+    #header{
+        justify-content: center;
+        margin-left: auto;
+        margin-right: auto;
+        text-align: center;
+        font-family: Arial, Helvetica, sans-serif;
+        width: max-content;
+        
+        border-bottom: 2px solid lightblue;
+    }
+
+    #gallery{
+        display: flex;
+        flex-direction: row;
+        padding-top: 30px;
+        margin-left: auto;
+        margin-right: auto;
+        text-align: center;
+        justify-content: center;
+        
+    }
+
+    .img-container img {
+        justify-content: center;
+        text-align: center;
+        width: 200px;
+        height: 200px;
+        object-fit: cover;
+    }
+
+    .img-container > p {
+			text-align: center;
+			visibility: hidden;
+		}
+
+		.thumbnail:hover + p {
+			visibility: visible;
+        }
+
+</style>
+
+<div id="everything">
+
+    <div id="header">
+        <h1> 75 YEARS OF SNOOPY </h1>
+        <p> a tribute to the bestest boy ever</p>
+    </div>
+
+<div id="gallery">
+
+    <div class="img-container">
+        <img class="thumbnail" src="img/photo-gallery-1.jpeg" alt="Happy Snoopy">
+        <p> Happy Snoopy </p>
+    </div>
+
+    <div class="img-container">
+        <img class="thumbnail" src="img/photo-gallery-2.jpeg" alt="Happy Snoopy">
+        <p> Top Gun Snoopy </p>
+    </div>
+
+    <div class="img-container">
+        <img class="thumbnail" src="img/photo-gallery-3.jpeg" alt="Happy Snoopy">
+        <p> Trail Captain Snoopy </p>
+    </div>
+
+    <div class="img-container">
+        <img class="thumbnail" src="img/photo-gallery-4.jpeg" alt="Happy Snoopy">
+        <p> Sundae Snoopy </p>
+    </div>
+
+    <div class="img-container">
+        <img class="thumbnail" src="img/photo-gallery-5.jpeg" alt="Happy Snoopy">
+        <p> Best Bud 4 Life Snoopy </p>
+    </div>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</div>
+</html>
