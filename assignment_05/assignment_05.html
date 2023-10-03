@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html>
+
+
+<head>
+    <title> Rachel Yoo | Interests Page </title>
+        
+    <link rel="stylesheet" href="assignment_05_main.css">
+
+    <style>
+        
+        #everything{
+            background-color: #4E71A5;
+            height: 2700px;
+        }
+
+        #content{
+            width: 1100px;
+            justify-content: center;
+            background-position: center;
+            margin-left: auto;
+            margin-right: auto;
+            margin-top: none;
+            height: 1900px;
+
+            background-color:white;
+        }
+
+        .row {
+            display: flex;
+            flex-direction: right;
+                }
+
+        .column {
+            display: flex;
+            flex-direction: down;
+        }
+
+        img{
+            width: 200px;
+            height: 200px;
+            padding: 10px;
+            object-fit: cover;
+        }
+
+        h2 {
+            color: navy;
+            text-shadow: 1px 1px 2px gray; 
+            padding-top: 10px;
+            padding-left: 35px;
+            font-size: 40px;
+        }
+
+        h3{
+            text-align: center;
+        }
+        
+        #mainbox, p{
+            font-size: 16px;
+            padding-right: 35px;
+            padding-left: 35px;
+            line-height: 27px;
+        }
+
+        /* #header{ 
+            font-family: Arial, Helvetica, sans-serif;
+            justify-content: center;
+            text-align: center;
+            line-height: 15;
+            color: white;
+            text-shadow: 3px 3px 2px navy; 
+            font-size: larger;
+
+            background-image: url(https://w.forfun.com/fetch/df/df73e23b78f3314a80455866e69e62fc.jpeg);
+            background-size: cover;
+            background-position: center;
+        } */
+
+        #main-box{
+            font-family: Arial, Helvetica, sans-serif;
+            padding: 30px;
+            display: flex;
+            flex-direction: column;
+            font-size: 20px;
+        }
+
+        .gallery{
+            width: 400px;
+            height: 200px;
+            object-fit: cover;
+        }
+
+        #body_01{
+            text-align: left;
+            background-color: white;
+        }
+
+        #body_02{
+            background-color: white;
+        }
+
+        #body_03{
+            background-color: white;
+        }
+
+        #body_01 img{
+            width: 400px;
+            height: 200px;
+            justify-content: center;
+            float: left;
+        }
+
+        #body_02 img{
+            width: 400px;
+            height: 200px;
+            justify-content: center;
+            float: right;
+        }
+
+        #body_03 img{
+            width: 400px;
+            height: 200px;
+            justify-content: center;
+            float: left;
+        }
+
+        .gallery{
+            padding: 20px
+        }
+
+        #sidebar img{
+            width: 200px;
+            justify-content: center;
+        }
+
+        #sidebar {
+            text-align: center;
+            background-color: lightcyan;
+            height: 1900px;
+            width: 300px;
+        }
+
+        .characters {
+            line-height: 5px;
+        }
+
+        .characters > p {
+			text-align: center;
+			visibility: hidden;
+		}
+
+		.yomama:hover + p {
+			visibility: visible;
+        }
+
+    </style>
+</head>
+
+<div id="everything">
+
+<body>
+
+    <div id="header"> 
+        <h1> <em> "MOVING PICTURES" </em> </h1>
+    </div>
+
+    <div id="navbar">
+        <a href="assignment_05.html"> HOME </a>
+        <a href="/Users/rachelsyoo/Desktop/webdev/ITP104/itp104-submissions-rachelsyoo/assignment_05/gallery.html"> GALLERY </a>
+    </div>
+
+<div id="content"> 
+<div class="row">
+
+    <div class="column">
+        
+    <div id="sidebar">
+        
+        <br>
+        <br>
+
+        <div class="characters"> 
+            <img class=yomama src="/Users/rachelsyoo/Desktop/webdev/ITP104/itp104-submissions-rachelsyoo/assignment_03/img/ponyo.webp" alt="illustration of Ponyo">
+            <p>Ponyo</p>
+        </div>
+
+        <div class="characters">
+            <img class=yomama src="/Users/rachelsyoo/Desktop/webdev/ITP104/itp104-submissions-rachelsyoo/assignment_03/img/Arrietty.webp" alt="illustration of Arietty">
+            <p>Arietty</p> 
+        </div>
+
+        <div class="characters">
+            <img class=yomama src="/Users/rachelsyoo/Desktop/webdev/ITP104/itp104-submissions-rachelsyoo/assignment_03/img/955829836d898716383d2fe3ad8c15ce.jpg" alt="illustration of Luffy">
+            <p> Luffy</p> 
+        </div>
+
+        <div class="characters">
+            <img class=yomama src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/927b3542-9619-419b-b22c-6d9544df9fbe/dfq1cxc-bf61d532-114b-4165-97ea-5fdb5038ed46.jpg/v1/fill/w_1066,h_750,q_70,strp/peanuts___snoopy_and_charlie_brown_by_morteneng21_dfq1cxc-pre.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9OTAwIiwicGF0aCI6IlwvZlwvOTI3YjM1NDItOTYxOS00MTliLWIyMmMtNmQ5NTQ0ZGY5ZmJlXC9kZnExY3hjLWJmNjFkNTMyLTExNGItNDE2NS05N2VhLTVmZGI1MDM4ZWQ0Ni5qcGciLCJ3aWR0aCI6Ijw9MTI4MCJ9XV0sImF1ZCI6WyJ1cm46c2VydmljZTppbWFnZS5vcGVyYXRpb25zIl19.jC3Cw__QwNYPHn9Om9gOF1_uCCJzu5CObe7yuwgZfJ0" alt="illustration of Luffy">
+            <p>Charlie Brown and Snoopy</p>
+        </div>
+
+
+
+
+    </div>
+    </div>
+
+    <div class="column">
+    <div id="main-box">
+        <div id="body_01">
+                <h2> PLAY WITH <em>MAGIC</em> </h2>
+                <p> 
+
+                    I am a huge fan of Motion Pictures, especially those that recreate the small beauties of life. Studio Ghibli is one of my favorite movie
+                    studios as they are really good at reimagining the same magic we all had as children. I love the imagery they use, especially their depictions of magical places
+
+                    <img class="gallery" src="https://i0.wp.com/www.tor.com/wp-content/uploads/2017/09/Totoro01.jpg?fit=740%2C+9999&crop=0%2C0%2C100%2C417px&ssl=1" alt="still cut of scene from ''My neighbor Totoro''">
+                    
+                    
+                    or even simple scenes they make magic out of. My favorite movies curated by them are "My Neighbor Totoro" and "Spirited Away." What's funny is that 
+                    I used to watch those shows as a kid, but when I rewatch them as an adult I interpret the movies completely differently. However, the magic
+                    is still there. I am constantly filled with nostalgia of the emotions I felt when I first watched the movie. 
+                
+                </p>
+
+        </div>
+        <br>
+
+        <div id="body_02">
+                <h2> <em>TRAVEL</em> TO NEW WORLDS </h2>
+                <p> 
+                    What do I like about animation, you may ask? I like that it creates possibilities that are solely fueled by human imagination. It has elements of fiction, yet is realistic enough for us to be able to imagine ourselves in those worlds or imagine those scenarios created in real life.
+                    
+                    <img class="gallery" src="https://cdnb.artstation.com/p/assets/images/images/008/109/149/large/henry-james-spiritedaway.jpg?1510553832" alt="still cut of scene from ''Spirited Away''">
+    
+                    
+                    The characters in 
+                    my favorite stories are always normal people - like me - who find themselves in magical situations and are whisked away to fantasy lands. My Neighbor Totoro, for example,
+                    follows the story of two sisters who are navigating a new home and neighborhood by themselves. In the midst of their loneliness, they meet a friendly forest 
+                    troll named Totoro who takes them on a series of adventures through the forest and the night sky. 
+
+                </p>
+        </div>
+        <br>
+
+
+        <div id="body_03">
+                <h2> <em>WHERE'S THE LIMIT?</em> </h2>
+                <p> 
+                    <img class="gallery" src="https://static.wikia.nocookie.net/onepiece/images/3/39/Arrival_at_Angel_Island.png/revision/latest?cb=20150708000917" alt="still cut of scene from ''One Piece''">
+
+                    Do you ever wonder how many childrens' lives are changed due to the creativity of animators? Here are the words of famous animator and 
+                    movie director Hayao Miyazaki: "Well, yes. I believe that children's souls are the inheritors of historical memory from previous generations. 
+                    It's just that as they grow older and experience the everyday world that memory sinks lower and lower. I feel I need to make a film that reaches down to that level. If I could do that I would die happy.""
+                </p>
+                <br>
+                <br>
+                <br>
+        </div>
+        </div>
+        <br>
+
+</div>
+</div>
+</div>
+
+
+</body>
+
+
+</div>
+
+    <div id="footer">
+        <br>
+        <h3>Courtesy of Rachel Yoo (2023) </h3>
+        <br>
+    </div>
+
+</html>
