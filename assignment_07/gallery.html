@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <title> Gallery </title>
+
+    <link rel="stylesheet" href="assignment_07_main.css">
+
+    <style>
+
+        @font-face {
+        font-family: "TITLE";
+        src: url('fonts/Grinchmas.ttf');
+        } 
+        
+        #everything{
+            background-color: #4E71A5;
+            height: 1800px;
+        }
+
+        h1{
+            font-family: "TITLE";
+            font-size: 3em;
+        }
+
+        #header{
+            height: 300px;
+            text-align: center;
+            line-height: 350px;
+            background-image: url(https://filmdaze.net/wp-content/uploads/2018/06/vlcsnap-2018-06-13-17h53m35s905.png);
+            background-position: 0% 80%;
+        }
+        
+
+        #gallery{
+            background-color: #286332;
+        }
+
+        #footer{
+            text-align: center;
+            justify-content: center;
+        }
+
+        #navbar{
+        background-color: #BCB192;
+        margin-bottom: 50px
+        }
+
+        #navbar a{
+        background-color: #BCB192;
+        text-shadow: 1px 1px black;
+        }
+
+        #navbar a:hover {
+        background-color: #EFB778;
+        border-bottom: 2px solid black;
+        color: beige;
+        }       
+
+        .gallery{
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+        }
+
+        .square-image{
+            background-color: white;
+            height: 200px;
+            width: 200px;
+            margin: 20px;
+
+            justify-content: center;
+            position: relative;
+        }
+
+        .rectangle-image{
+            background: blue;
+            height: 200px;
+            margin: 20px;
+
+            object-fit: cover;
+            position: relative;
+        }
+
+        .overlay{
+			position: absolute;
+			top: 0px;
+			right: 0px;
+			left: 0px;
+			bottom: 0px;
+
+			background-color: #000;
+			color: #FFF;
+			opacity: 70%;
+			
+			/* aligning text! */
+			text-align: center;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+            visibility: hidden;
+		}
+
+        .square-image:hover {
+            visibility: visible;
+        }
+
+        .square-image > img {   
+            height: 200px;
+            width: 200px;
+            object-fit: cover;
+        }
+
+        .rectangle-image > img {   
+            width: auto;
+            height: 200px;
+            position: relative;
+        }
+
+        .large-image{
+            height: 400px;
+            width: 850px;
+            background: beige;
+            margin: 20px;
+
+            object-fit: cover;
+            position: relative;
+        }
+
+        .large-image > img {   
+            width: 850px;
+            height: 400px;
+        }
+
+    </style>
+
+</head>
+
+<div id="everything">
+    
+<body>
+    
+    <div id="header"> 
+        <h1> <em> "GALLERY" </em> </h1>
+    </div>
+
+    <div id="navbar">
+        <a href="assignment_07.html"> HOME </a>
+        <a id=gallery href="/Users/rachelsyoo/Desktop/webdev/ITP104/itp104-submissions-rachelsyoo/assignment_07/gallery.html"> GALLERY </a>
+    </div>
+
+<div class="gallery">
+    <div class="square-image"> 
+        <img src="images/1.jpeg" alt="Garden House">
+        <div class="overlay">Garden House</div>
+    </div>
+
+    <div class="rectangle-image">
+        <img src="images/2.jpeg" alt="Picnic">
+        <div class="overlay">Picnic</div>
+    </div>
+
+    <div class="square-image">
+        <img src="images/3.jpeg" alt="Mystical Light">
+        <div class="overlay">Mystical Lights</div>
+    </div>
+</div>
+
+<div class="gallery">
+    <div class="rectangle-image">
+        <img src="images/4.jpeg" alt="Bike Scene">
+        <div class="overlay">Bike Scene</div>
+    </div>
+    <div class="rectangle-image">
+        <img src="images/5.png" alt="Car Driving Down the Hill">
+        <div class="overlay">Car Driving Down the Hill</div>
+    </div>
+</div>
+
+<div class="gallery">
+    <div class="square-image">
+        <img src="images/6.png" alt="Guy and Girl Standing">
+        <div class="overlay">Guy and Girl Standing</div>
+    </div>
+    <div class="rectangle-image">
+        <img src="images/7.jpeg" alt="Kiki and her Cat">
+        <div class="overlay">Kiki and her Cat</div>
+    </div>
+    <div class="square-image">
+        <img src="images/8.jpeg" alt="Ponyo and Sosuke">
+        <div class="overlay">Ponyo and Sosuke</div>
+    </div>
+</div>
+
+<div class="gallery">
+    <div class="large-image">
+        <img src="images/9.jpeg" alt="Howl and Sophie">
+        <div class="overlay">Howl and Sophie</div>
+    </div>
+</div>
+
+
+
+
+</body>
+</div>
+
+
+<div id="footer">
+    <br>
+    <h3>Courtesy of Rachel Yoo (2023) </h3>
+    <br>
+</div>
+
+</html>
