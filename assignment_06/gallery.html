@@ -5,7 +5,7 @@
 
     <title> Gallery </title>
 
-    <link rel="stylesheet" href="assignment_07_main.css">
+    <link rel="stylesheet" href="assignment_06_main.css">
 
     <style>
 
@@ -94,15 +94,25 @@
 			color: #FFF;
 			opacity: 70%;
 			
-			/* aligning text! */
 			text-align: center;
 			display: flex;
 			align-items: center;
 			justify-content: center;
-            visibility: hidden;
 		}
 
-        .square-image:hover {
+        .square-image > .overlay {
+            visibility: hidden;
+        }
+
+        .rectangle-image > .overlay {
+            visibility: hidden;
+        }
+
+        .large-image > .overlay {
+            visibility: hidden;
+        }
+
+        .gallery + img:hover {
             visibility: visible;
         }
 
@@ -146,31 +156,31 @@
     </div>
 
     <div id="navbar">
-        <a href="assignment_07.html"> HOME </a>
+        <a href="assignment_06.html"> HOME </a>
         <a id=gallery href="/Users/rachelsyoo/Desktop/webdev/ITP104/itp104-submissions-rachelsyoo/assignment_07/gallery.html"> GALLERY </a>
     </div>
 
 <div class="gallery">
     <div class="square-image"> 
         <img src="images/1.jpeg" alt="Garden House">
-        <div class="overlay">Garden House</div>
+        <div class="overlay"> <p>Garden House</p></div>
     </div>
 
     <div class="rectangle-image">
         <img src="images/2.jpeg" alt="Picnic">
-        <div class="overlay">Picnic</div>
+        <div class="overlay"><p>Picnic</p></div>
     </div>
 
     <div class="square-image">
         <img src="images/3.jpeg" alt="Mystical Light">
-        <div class="overlay">Mystical Lights</div>
+        <div class="overlay"><p>Mystical Lights</p></div>
     </div>
 </div>
 
 <div class="gallery">
     <div class="rectangle-image">
         <img src="images/4.jpeg" alt="Bike Scene">
-        <div class="overlay">Bike Scene</div>
+        <div class="overlay"><p>Bike Scene</p></div>
     </div>
     <div class="rectangle-image">
         <img src="images/5.png" alt="Car Driving Down the Hill">
