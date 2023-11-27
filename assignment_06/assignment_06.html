@@ -168,6 +168,37 @@
 			visibility: visible;
         }
 
+        #top-menu {
+			display: flex;
+			align-items: flex-start;
+			justify-content: center;
+		}
+
+        #sub-menu{
+            background-color: gray;
+        }
+
+        #top-menu ul{
+            position: absolute;
+            display: none;
+        }
+
+        #navbar li:hover > ul {
+            display: block;
+        }
+
+        #navbar ul {
+			list-style: none;
+			padding: 0px;
+			margin: 0px;
+		}
+
+        #navbar li {
+			width: 300px;
+			text-align: center;
+			position: relative;
+        }
+
     </style>
 </head>
 
@@ -180,8 +211,16 @@
     </div>
 
     <div id="navbar">
-        <a href="assignment_06.html"> HOME </a>
-        <a href="/Users/rachelsyoo/Desktop/webdev/ITP104/itp104-submissions-rachelsyoo/assignment_06/gallery.html"> GALLERY </a>
+        <ul id="top-menu">
+            <li><a href="assignment_06.html"> HOME </a>
+                <ul id="sub-menu">
+                    <li> <a href=#body_01> Play With Magic </a> </li>
+                    <li> <a href=#body_02> Travel to New Worlds </a> </li>
+                    <li> <a href=#body_03> Where's The Limit? </a></li>
+                </ul>
+            </li>
+            <li><a href="/Users/rachelsyoo/Desktop/webdev/ITP104/itp104-submissions-rachelsyoo/assignment_06/gallery.html"> GALLERY </a></li>
+        </ul>
     </div>
 
 <div id="content"> 
