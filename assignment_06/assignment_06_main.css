@@ -49,3 +49,34 @@
     justify-content: center;
     text-align: center;
 }
+
+#top-menu {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+#sub-menu{
+    background-color: gray;
+}
+
+#top-menu ul{
+    position: absolute;
+    display: none;
+}
+
+#navbar li:hover > ul {
+    display: block;
+}
+
+#navbar ul {
+    list-style: none;
+    padding: 0px;
+    margin: 0px;
+}
+
+#navbar li {
+    width: 300px;
+    text-align: center;
+    position: relative;
+}

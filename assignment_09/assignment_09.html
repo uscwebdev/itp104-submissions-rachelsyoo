@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="Rachel's About Me Page" content="In this page I discuss my passions and my reasons for creating. I also talk about who I am as an individual as well as my educational background.">
+</head>
+
+<style>
+
+p {
+    font-family: Arial, Helvetica, sans-serif; 
+    font-size: 20px;
+    line-height: 10px;
+}
+
+h1 {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: -20px 0px 0px 0px;
+    font-size: 100px;
+    font-weight: bolder;
+    letter-spacing: 1px;
+}
+
+#navbar {
+    display: flex;
+    flex-direction: row;
+    height: 130px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+#logo {
+    width: 50vw;
+    right: 50vw;
+    height: 40px;
+    margin-top: 20px;
+    justify-content: center;
+    margin-left: 10px;
+}
+
+    #logo img {
+        width: 110px;
+        height: auto;
+        margin-left: 80px;
+    }
+
+#main-menu{
+    float: right;
+    width: 50vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    margin-top: 20px;
+    margin-left: 50px
+}
+
+    .menu-items{
+        display: flex;
+        padding: 15px;
+        font-family: Arial, Helvetica, sans-serif;
+        font-weight: bold;
+        align-items: center;
+    }
+
+        .menu-items a {
+            text-decoration: none;
+            color: black;
+        }
+
+        .menu-items a:hover {
+            color: blue;
+        }
+
+        .menu-items > p{
+            font-size: 20px;
+        }
+
+        .menu-items > ul {
+        list-style: none;
+        visibility: hidden;
+        }
+
+        .menu-items > img {
+            padding-left: 20px;
+        }
+
+    #menu-button {
+    width: 800px;
+    justify-content: center;
+    align-items: center;
+    }
+
+        #menu-button > img {
+            height: 20px;
+            width: auto;
+            margin-left: 20px;
+        }
+
+        #menu-button:hover {
+            visibility: visible;
+        }
+
+#footer{
+    background-color: black;
+    height: 200px;
+    width: 100vw;
+    position: absolute;
+        left: 0;
+        bottom: -2;
+    color: white;
+    text-align: center;
+    line-height: 60px;
+    padding: 30px;
+}
+
+
+    /* #footer p{
+        color: white;
+    } */
+
+</style>
+
+<div id="everything">
+<header>
+    <div id="navbar">
+
+        <div id="logo">
+            <img src="/Users/rachelsyoo/Desktop/webdev/ITP104/itp104-submissions-rachelsyoo/assignment_08/img/Illustration137 (1).png" alt="logo">
+        </div>
+
+        <div id="main-menu">
+            <div class="menu-items">
+                <p> <a href=""> WORK </a></p>
+            </div>
+
+            <div class="menu-items">
+                <p><a href=""> RESUME </a></p>
+            </div>
+
+            <div class="menu-items">
+                <p><a href=""> ABOUT  </a></p>
+            </div>
+
+            <div class="menu-items">
+                <img src="/Users/rachelsyoo/Desktop/webdev/ITP104/itp104-submissions-rachelsyoo/assignment_08/img/menu lines.png" alt="menu button">
+                <ul>
+                    <li>ART GALLERY</li>
+                    <li>DESIGN GALLERY</li>
+                    <li>WRITTEN WORK</li>
+                    <li>RESUME</li>
+                    <li>ABOUT ME</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</header>
+
+<body>
+    
+</body>
+
+<footer>
+    <div id="footer">
+        <p> Hello! Thank you for visiting my portfolio. Aside from my creative works, I also have other interests including football, tennis, games, and of course, my dogs! </p>
+        <p> Feel free to contact my through email at rsyoo@usc.edu! </p>
+    </div>
+</footer>
+
+</div>
+</html>

@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="Rachel's Portfolio" content="Welcome to my website! Here, you will find a website containing all of my personal and professional work content, as well as all of my creative pieces">
+</head>
+
+<style>
+body{
+    width: 100vw;
+}
+
+#info-box{
+    padding-bottom: 400px;
+}
+
+p {
+    font-family: Arial, Helvetica, sans-serif; 
+    font-size: 20px;
+    line-height: 10px;
+}
+
+h1 {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: -20px 0px 0px 0px;
+    font-size: 100px;
+    font-weight: bolder;
+    letter-spacing: 1px;
+}
+
+#navbar {
+    display: flex;
+    flex-direction: row;
+    height: 130px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+#logo {
+    width: 50vw;
+    right: 50vw;
+    height: 40px;
+    margin-top: 20px;
+    justify-content: center;
+    margin-left: 10px;
+}
+
+    #logo img {
+        width: 110px;
+        height: auto;
+        margin-left: 80px;
+    }
+
+#main-menu{
+    float: right;
+    width: 50vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    margin-top: 20px;
+    margin-left: 50px
+}
+
+    .menu-items{
+        display: flex;
+        padding: 15px;
+        font-family: Arial, Helvetica, sans-serif;
+        font-weight: bold;
+        align-items: center;
+    }
+
+        .menu-items a {
+            text-decoration: none;
+            color: black;
+        }
+
+        .menu-items a:hover {
+            color: blue;
+        }
+
+        .menu-items > p{
+            font-size: 20px;
+        }
+
+        .menu-items > ul {
+        list-style: none;
+        visibility: hidden;
+        }
+
+        .menu-items > img {
+            padding-left: 20px;
+        }
+
+    #menu-button {
+    width: 800px;
+    justify-content: center;
+    align-items: center;
+    }
+
+        #menu-button > img {
+            height: 20px;
+            width: auto;
+            margin-left: 20px;
+        }
+
+        #menu-button:hover {
+            visibility: visible;
+        }
+
+#body{
+    display: flex;
+    flex-direction: row;
+    margin-top: 30px;
+}
+
+#body-left{
+    width: 50%;
+    margin-left: 100px;
+}
+
+#body-right{
+    width: 50%;
+}
+
+    #body-right > img{
+        width: 180px;
+    }
+
+#arrow img{
+    width: 30px;
+    height: auto;
+    display: flex;
+    justify-content: c enter;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 110px;
+}
+
+#about-me{
+    border: 1px solid black;
+    width: 550px;
+    height: 280px;
+    border-radius: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 70px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+    #about-me img{
+        width: 180px;
+        height: auto;
+    }
+
+    #about-me p{
+        text-decoration: none;
+        color: black;
+    }
+
+a{
+    text-decoration: none;
+}
+
+#my-work{
+    border: 1px solid black;
+    width: 550px;
+    height: 800px;
+    border-radius: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 70px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+    #my-work img{
+        width: 250px;
+        height: auto;
+    }
+
+    #my-work p{
+        text-decoration: none;
+        color: black;
+    }
+
+    #work-buttons{
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+    }
+
+        #work-buttons img{
+            width: 300px;
+            height: auto;
+            padding: 16px;
+        }
+
+#the-lab{
+    border: 1px solid black;
+    width: 550px;
+    height: 300px;
+    border-radius: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 50px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}
+    #the-lab p{
+        color: black;
+    }
+
+    #info-box p{
+        font-weight: bold;
+        font-size: 25px;
+        padding: 10px;
+        text-align: center;
+    }
+
+    #the-lab img{
+        width: 180px;
+        height: auto;
+    }
+
+
+.button{
+    background-color: aquamarine;
+    width: 180px;
+    height: 60px;
+    border-radius: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10px;
+}
+
+    .button p {
+        font-size: 100px;
+        font-weight: bolder;
+        vertical-align: center;
+        margin-top: 20px;
+    }
+
+#footer{
+    background-color: black;
+    height: 200px;
+    width: 100vw;
+    position: absolute;
+        left: 0;
+        bottom: -2;
+    color: white;
+    text-align: center;
+    line-height: 60px;
+    padding: 30px;
+}
+
+
+    /* #footer p{
+        color: white;
+    } */
+
+</style>
+
+<div id="everything">
+<header>
+    <div id="navbar">
+
+        <div id="logo">
+            <img src="/Users/rachelsyoo/Desktop/webdev/ITP104/itp104-submissions-rachelsyoo/assignment_08/img/Illustration137 (1).png" alt="logo">
+        </div>
+
+        <div id="main-menu">
+            <div class="menu-items">
+                <p> <a href=""> WORK </a></p>
+            </div>
+
+            <div class="menu-items">
+                <p><a href=""> RESUME </a></p>
+            </div>
+
+            <div class="menu-items">
+                <p><a href=""> ABOUT  </a></p>
+            </div>
+
+            <div class="menu-items">
+                <img src="/Users/rachelsyoo/Desktop/webdev/ITP104/itp104-submissions-rachelsyoo/assignment_08/img/menu lines.png" alt="menu button">
+                <ul>
+                    <li>ART GALLERY</li>
+                    <li>DESIGN GALLERY</li>
+                    <li>WRITTEN WORK</li>
+                    <li>RESUME</li>
+                    <li>ABOUT ME</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</header>
+
+<body>
+    <div id="body">
+        <div id="body-left">
+            <p>  hi! my name is </p>
+            <br>
+            <h1> RACHEL </h1>
+            <h1> SLESSOR </h1>
+            <h1> YOO </h1>
+            <p>  I am a web designer & creative - </p>
+            <p> welcome to my home page!</p>
+            <p> ---- </p>
+        </div>
+        
+        <div id="body-right">
+            <img src="/Users/rachelsyoo/Desktop/webdev/ITP104/itp104-submissions-rachelsyoo/assignment_08/img/homepage img.png" alt="illustration">
+        </div>
+    </div>
+
+    <div id="arrow">
+        <img src="/Users/rachelsyoo/Desktop/webdev/ITP104/itp104-submissions-rachelsyoo/assignment_08/img/arrow.png" alt="arrow">
+    </div>
+
+    <div id="info-box">
+    <a href="">
+        <div id="about-me">
+            <p> about me </p>
+            <img src="/Users/rachelsyoo/Desktop/webdev/ITP104/itp104-submissions-rachelsyoo/assignment_08/img/aboutme.png" alt="illustration of me">
+        </div>
+    </a>
+    
+    <a href="">
+        <div id="my-work">
+            <p> my work </p>
+            <img src="/Users/rachelsyoo/Desktop/webdev/ITP104/itp104-submissions-rachelsyoo/assignment_08/img/work.png" alt="working person drawing">
+        
+            <div id="work-buttons">
+            <a href="https://rachelsyoo.com/rowze"><img src="/Users/rachelsyoo/Desktop/webdev/ITP104/itp104-submissions-rachelsyoo/assignment_08/img/rowze-button.jpeg" alt="Rowze Page"></a>
+            <a href="https://rachelsyoo.com/queue"><img src="/Users/rachelsyoo/Desktop/webdev/ITP104/itp104-submissions-rachelsyoo/assignment_08/img/queue-button.jpeg" alt="Queue Page"></a>
+            </div>
+
+
+        </div>
+    </a>
+
+    <a href="">
+        <div id="the-lab">
+            <p> the lab </p>
+            <img src="/Users/rachelsyoo/Desktop/webdev/ITP104/itp104-submissions-rachelsyoo/assignment_08/img/lab .png" alt="illustration of lab girl">
+        </div>
+    </a>
+
+    </div>
+
+</body>
+
+<footer>
+    <div id="footer">
+        <p> Hello! Thank you for visiting my portfolio. Aside from my creative works, I also have other interests including football, tennis, games, and of course, my dogs! </p>
+        <p> Feel free to contact my through email at rsyoo@usc.edu! </p>
+    </div>
+</footer>
+
+</div>
+</html>
